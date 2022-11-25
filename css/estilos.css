@@ -1,0 +1,99 @@
+html {
+  font-size: 16px;
+}
+* {
+  box-sizing: border-box;
+}
+/* Variables */
+:root {
+  /* Colores */
+  --color_verdeBase: #59d9b5;
+  --color_verdeOscuro: #01402e;
+  --color_verdeClaro: #b3f2e0;
+  --color_verdeMuyClaro: #d0f2e9;
+  --color_grisFondo: #fafcfe;
+  /* Márgenes */
+  --margen_paddingGeneral: 30px;
+  --margen_paddingBotones: 8px 10px;
+  --margen_separacionSections: 80px;
+  --margen_curvaBoton: 24px;
+  /* Fuentes */
+  --fuente_Base: Arial;
+  --fuente_BaseTamanyo: 1rem;
+  --fuente_h1: 2rem;
+  --fuente_h2: 1.5rem;
+  --fuente_h3: 1.3rem;
+  --fuente_botones: var(--fuente_h3);
+  --fuente_parrafos: var(--fuente_BaseTamanyo);
+}
+
+/* Hago invisible el checkbox */
+
+input {
+  display: none;
+}
+
+/* Hago invisbile la lista (por el momento) */
+
+.desplegable {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color_verdeBase);
+}
+
+label {
+  position: absolute;
+  top: var(--margen_paddingGeneral);
+  left: var(--margen_paddingGeneral);
+}
+
+/* Cuando el input checkbox esta 'checked' ~ ul se muestra :) */
+input:checked ~ .desplegable {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: var(--fuente_h1);
+  color: white;
+}
+
+/* Icono de las tres barras (Más pequeño que si no es un avión) */
+svg {
+  width: 32px;
+}
+
+/* Quito decoracion de los elementos de la lista */
+
+ul {
+  list-style: none;
+}
+
+/* Fuera margenes y padding */
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+}
+
+/* Logo central */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.logo > svg {
+  width: 200px;
+}
+
+.menudesplegable {
+  position: absolute;
+  z-index: 2;
+}
