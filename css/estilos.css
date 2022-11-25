@@ -4,6 +4,10 @@ html {
 * {
   box-sizing: border-box;
 }
+
+body {
+  background-color: var(--color_verdeBase);
+}
 /* Variables */
 :root {
   /* Colores */
@@ -55,7 +59,8 @@ input:checked ~ .desplegable {
   justify-content: space-evenly;
   align-items: center;
   font-size: var(--fuente_h1);
-  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(238, 238, 238);
 }
 
 /* Icono de las tres barras (Más pequeño que si no es un avión) */
@@ -87,10 +92,15 @@ li {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color_grisFondo);
+  font-size: var(--fuente_h1);
+  font-weight: bold;
 }
 
-.logo > svg {
-  width: 200px;
+.logo > img {
+  width: 40px;
+  filter: invert();
 }
 
 .menudesplegable {
