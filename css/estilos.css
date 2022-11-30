@@ -96,7 +96,6 @@ li {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--color_grisFondo);
   font-size: var(--fuente_h1);
-  font-weight: bold;
 }
 
 .logo > img {
@@ -108,3 +107,99 @@ li {
   position: absolute;
   z-index: 2;
 }
+
+/* Estilos Login */
+
+.titulo {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+/* Estilo h3 */
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color_verdeBase);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.login_container {
+  display: flex;
+  background-color: white;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.loginlogo {
+  padding-top: 40px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color_verdeOscuro);
+  font-size: var(--fuente_h1);
+  font-weight: bold;
+}
+
+.loginlogo > img {
+  width: 40px;
+  margin-right: 5px;
+}
+
+.urmoney {
+  display: flex;
+  justify-content: center;
+}
+.urmoney > h3 {
+  font-size: 14px;
+  color: rgb(196, 196, 196);
+  font-weight: lighter;
+}
+
+/* Inputs del LogIn (Antes botones...)*/
+
+.botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+  flex-direction: column;
+}
+.inputlogin {
+  display: block;
+  width: 80vw;
+  height: 48px;
+  border-radius: 24px;
+  background-color: var(--color_verdeBase);
+  border: none;
+  color: black);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.inputpassword {
+  margin-top: 10px;
+  display: block;
+  width: 80vw;
+  height: 48px;
+  border-radius: 24px;
+  background-color: rgb(232, 230, 230);
+  border: none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.inputlogin::placeholder {
+  color: var(--color_grisFondo);
+}
+
+.inputpassword::placeholder {
+  color: var(--color_verdeOscuro);
+}
+
