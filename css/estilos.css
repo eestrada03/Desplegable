@@ -218,3 +218,12 @@ h3 {
   font-size: small;
   color: rgb(212, 210, 210);
 }
+
+/* Estilos de las 'a' fuera!! */
+
+a{
+  text-decoration: none;
+  font-size: var(--fuente_h3);
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(238, 238, 238);
+}
