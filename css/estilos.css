@@ -4,9 +4,10 @@ html {
 * {
   box-sizing: border-box;
 }
-
-body {
+/* Color fondo index.html (Container NO Body) */
+.container {
   background-color: var(--color_verdeBase);
+  height: 100vh;
 }
 /* Variables */
 :root {
